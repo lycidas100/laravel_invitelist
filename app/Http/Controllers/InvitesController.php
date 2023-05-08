@@ -13,7 +13,7 @@ class InvitesController extends Controller
 
         $validator =  $request->validate([
             
-            'file' => 'required|max:2000',               
+            'file' => 'required|mimetypes:application/json',               
         ]);
 
         $content = '';
